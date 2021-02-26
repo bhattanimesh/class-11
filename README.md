@@ -2,5 +2,5 @@
 # This code uses pyttsx3 for speach and tkinter for GUI. 
 
 # Install the following 
-pip install tkinter
-pip install pyttsx3
+# pip install tkinter
+# pip install pyttsx3

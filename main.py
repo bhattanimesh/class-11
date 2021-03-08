@@ -3,18 +3,17 @@ School Project by Animesh Bhatt
 Class - 11th A
 Roll no. - 1
 Date - 19th Feb 2021
-Program - Interactive text file reader
+Program - Interactive text file reader & save as MP3
 '''
 import pyttsx3 as tts
 import tkinter
 from tkinter import filedialog
 from tkinter import *
-from tkinter.messagebox import *
 
 
 # setting properties of the tkinter GUI
 root = Tk()
-root.title("Interactive text file reader")
+root.title("Interactive text file reader & save as MP3")
 root.resizable(0, 0)
 
 
@@ -67,12 +66,6 @@ def filechooser():
         Button(root,text="Read text", command= filespeak).grid(row=7,column=5,pady=5,padx=20)
         Button(root, text="Save audio", command=save_audio).grid(row=8,column=5,pady=5,padx=20)
 
-def iexit():
-    res = askyesno('Confirm', 'Do you want to exit?')
-    if res:
-        root.destroy()
-    else:
-        pass
 
 # Main code; it executes and works according to the button pressed
 Label(root,text="Interactive text file reader",font=("Times", 20)).grid(row=0,column=5,ipadx=10)

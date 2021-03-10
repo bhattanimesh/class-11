@@ -46,7 +46,7 @@ def default():
 
 def filechooser():
     global filename #making the variable global
-    root.filename = filedialog.askopenfilename(initialdir="C:", title="Select file",
+    root.filename = filedialog.askopenfilename(initialdir="C:\Users\user\Desktop", title="Select file",
                                                filetypes=(("Text files", "*.txt"), ("All files", "*.*")))
     filename = root.filename #get filename
     print(filename)
